@@ -1,0 +1,202 @@
+*{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 700px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+  
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: wheat;
+}
+
+header {
+    display: flex;
+    justify-content: center; /*horizontal*/
+    align-items: center; /*vertical*/
+    color: #74d2ff;
+    font-size: xx-large;
+}
+
+header span {
+    color: #ff748c;
+}
+
+h2 {
+    color: #ff905b;
+}
+
+.navbar {
+    background-color: #ff905b; 
+    overflow: hidden; 
+}
+
+.navbar a {
+    float: left; 
+    display: block; 
+    color: white; 
+    text-align: center;
+    padding: 10px 16px; 
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #e98044;
+    color: white; 
+}
+
+/* Flexbox */
+
+.flex-container {
+    display: flex;
+    align-items: stretch;
+    background-color: wheat;
+}
+
+.item-1 {
+    flex: 1; 
+    background-color: rgb(253, 245, 231);
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    
+}
+.item-2 {
+    flex: 3; 
+    background-color: rgb(253, 245, 231);
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.colunas {
+    background-color: rgb(253, 245, 231);
+}
+
+.item-3 {
+    flex: 1; 
+    background-color: rgb(253, 245, 231);
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.flex-container > div {
+    margin: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+  }
+
+.flex-container .item-1 {
+    text-align: left;
+    padding: 20px;
+}
+
+.flex-container .item-3 {
+    text-align: left;
+    padding: 20px;
+}
+
+/*Flexbox da coluna do meio*/
+
+/*Botões*/
+.button-produto {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: large;
+    background-color: #ff905b;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px; 
+    cursor: pointer;
+}
+
+.button-produto:hover {
+    background-color: #e98044;
+}
+
+.button-filtro {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: large;
+    background-color: #ff905b;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px; 
+    cursor: pointer;
+}
+
+.button-filtro:hover {
+    background-color: #e98044;
+}
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.formulario-venda, .formulario-filtro {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+.product-list {
+    margin: 20px;
+}
+.product-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+img {
+    max-width: 400px;
+}
+
+.add-to-cart {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: large;
+    background-color: #ff905b;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px; 
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #e98044;
+}
+
+footer {
+    background-color: #ff905b;
+    font-weight: 600;
+    padding: 60px;
+    color: white;
+  }
+  .icons {
+    text-align: right;
+  }
+  
+  .icons a {
+    text-decoration: none;
+    margin-right: 20px;
+  }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doce Encanto</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--/google fonts-->
+    <script src="https://kit.fontawesome.com/9bd38aa358.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="#home">Início</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div id="home"></div>
+    
+    <header>
+        <h1><span>Doce</span> Encanto</h1><br>
+    </header>
+
+    <!-- Flexbox -->
+    <div class="flex-container">
+
+        <!-- Coluna -->
+        <div class="item-3">
+            <div class="formulario-venda">
+                <h2>Anuncie aqui!</h2>
+                <form id="sell-form">
+                    <!-- Imagem -->
+                    <label for="imageUrl">URL da Imagem:</label><br>
+                    <input type="url" id="imageUrl" name="imageUrl" required autocomplete="off"><br>
+                    
+                    <img id="previewImage" src="" alt="Pré-visualização da Imagem" style="max-width: 220px; display: none;"><br>
+
+                    <!-- Nome da roupa -->
+                    <label for="nome-da-roupa">Categoria:</label><br>
+                    <select id="nome-da-roupa" name="nome-da-roupa">
+                        <option value="Blusa">Blusas</option>
+                        <option value="Short">Shorts</option>
+                        <option value="Saia">Saias</option>
+                        <option value="Vestido">Vestidos</option>
+                        <option value="Casaco">Casacos</option>
+                        <option value="Calca">Calças</option>
+                        <option value="Acessorios">Acessórios</option>
+                        <option value="Outra">Outra (informe na descrição)</option>
+                    </select><br><br>
+        
+                    <!-- Tamanho -->
+                    <label for="tamanho">Selecione o tamanho:</label><br>
+                    <select id="tamanho" name="tamanho">
+                        <option value="PP">PP</option>
+                        <option value="P">P</option>
+                        <option value="M">M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
+                        <option value="Outro">Outro (informe na descrição)</option>
+                    </select><br><br>
+        
+                    <!-- Descricao -->
+                    <label for="descricao-do-produto">Descrição do produto:</label><br>
+                    <input type="text" id="descricao-do-produto" name="descricao-do-produto" autocomplete="off"><br><br>
+        
+                    <!-- Preco -->
+                    <label for="preco-do-produto">Preço do produto:</label><br>
+                    <input type="text" id="preco-do-produto" name="preco-do-produto" placeholder="00,00" autocomplete="off"><br><br><br>
+        
+                    <center><input type="submit" value="Adicionar" class="button-produto"></center>
+                </form>
+            </div>
+        </div>
+        <!-- Coluna -->
+        <div class="item-2">
+            
+            <!-- Lista de produtos -->
+            <div class="product-list" id="product-list" >
+                <h2>Produtos em Estoque</h2>
+            </div>
+        </div>
+    </div>
+
+    <div id="contato"></div>
+
+    <footer>
+        <div class="icons">
+            <p>ACOMPANHE NOSSAS REDES SOCIAIS:</p>
+            <i class="fa-brands fa-facebook fa-2xl" style="color: white;"></i>
+            <i class="fa-brands fa-tiktok fa-2xl" style="color: white"></i>
+            <i class="fa-brands fa-solid fa-instagram fa-2xl" style="color: white;"></i>
+
+    </footer>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
